@@ -25,8 +25,8 @@ class _GoldState extends State<Gold> {
   TextEditingController priceOfTolaController = TextEditingController();
   TextEditingController quantityOfTolagoldController = TextEditingController();
   TextEditingController quantityOfMashaGoldController = TextEditingController();
-  TextEditingController quantityOfRattiGoldcontroller = TextEditingController();
-  TextEditingController quantityOfPointGoldcontroller = TextEditingController();
+  TextEditingController quantityOfRattiGoldController = TextEditingController();
+  TextEditingController quantityOfPointGoldController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,8 +63,8 @@ class _GoldState extends State<Gold> {
                   priceOfTolaController.clear();
                   quantityOfTolagoldController.clear();
                   quantityOfMashaGoldController.clear();
-                  quantityOfRattiGoldcontroller.clear();
-                  quantityOfPointGoldcontroller.clear();
+                  quantityOfRattiGoldController.clear();
+                  quantityOfPointGoldController.clear();
                   priceOfTola = 0;
                   quantityOfTolaGold = 0;
                   quantityOfMashaGold = 0;
@@ -176,7 +176,7 @@ class _GoldState extends State<Gold> {
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
                     keyboardType: TextInputType.number,
-                    controller: quantityOfRattiGoldcontroller,
+                    controller: quantityOfRattiGoldController,
                     style: TextStyle(color: Colors.yellow),
                     decoration: InputDecoration(
                         border: InputBorder.none,
@@ -198,7 +198,7 @@ class _GoldState extends State<Gold> {
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
                     keyboardType: TextInputType.number,
-                    controller: quantityOfPointGoldcontroller,
+                    controller: quantityOfPointGoldController,
                     style: TextStyle(color: Colors.yellow),
                     decoration: InputDecoration(
                         border: InputBorder.none,
@@ -226,11 +226,11 @@ class _GoldState extends State<Gold> {
                         if (quantityOfMashaGoldController.text == "") {
                           quantityOfMashaGoldController.text = "0";
                         }
-                        if (quantityOfRattiGoldcontroller.text == "") {
-                          quantityOfRattiGoldcontroller.text = "0";
+                        if (quantityOfRattiGoldController.text == "") {
+                          quantityOfRattiGoldController.text = "0";
                         }
-                        if (quantityOfPointGoldcontroller.text == "") {
-                          quantityOfPointGoldcontroller.text = "0";
+                        if (quantityOfPointGoldController.text == "") {
+                          quantityOfPointGoldController.text = "0";
                         }
 
                         priceOfTola = int.parse(priceOfTolaController.text);
@@ -240,9 +240,9 @@ class _GoldState extends State<Gold> {
                             int.parse(quantityOfMashaGoldController.text);
 
                         quantityOfRattiGold =
-                            int.parse(quantityOfRattiGoldcontroller.text);
+                            int.parse(quantityOfRattiGoldController.text);
                         quantityOfPointGold =
-                            int.parse(quantityOfPointGoldcontroller.text);
+                            int.parse(quantityOfPointGoldController.text);
 
                         // if (priceOfTola == "" &&
                         //     quantityOfTolaGold == "" &&
