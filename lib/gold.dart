@@ -376,7 +376,7 @@ class _GoldclassState extends State<Goldclass> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'Price per Masha =$quantityOfPointGold',
+                'Price per Masha =$priceMasha',
                 style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.w500,
@@ -386,7 +386,7 @@ class _GoldclassState extends State<Goldclass> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'Price per Ratti =$quantityOfPointGold',
+                'Price per Ratti =$priceratti',
                 style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.w500,
@@ -396,7 +396,7 @@ class _GoldclassState extends State<Goldclass> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'Price per Point =$quantityOfPointGold',
+                'Price per Point =$pricePoint',
                 style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.w500,
