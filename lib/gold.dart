@@ -61,10 +61,10 @@ class _GoldState extends State<Gold> {
                 backgroundColor: Colors.black,
                 onPressed: () {
                   priceOfTolaController.clear();
-                  quantityOfGoldController.clear();
-                  quantityOfMashaController.clear();
-                  quantityOfRattiController.clear();
-                  quantityOfPointControlller.clear();
+                  quantityOfTolagoldController.clear();
+                  quantityOfMashaGoldController.clear();
+                  quantityOfRattiGoldcontroller.clear();
+                  quantityOfPointGoldcontroller.clear();
                   priceOfTola = 0;
                   quantityOfTolaGold = 0;
                   quantityOfMashaGold = 0;
@@ -249,14 +249,18 @@ class _GoldState extends State<Gold> {
                         //     quantityOfMashaGold == "" &&
                         //     quantityOfRattiGold == "" &&
                         //     quantityOfPointGold == "") {
-                        priceMasha = quantityOfTolaGold / 12;
 
+                        //formula for price per masha
+                        priceMasha = quantityOfTolaGold / 12;
                         double totalMashaPrice =
                             priceMasha * quantityOfMashaGold;
-                        priceratti = quantityOfMashaGold / 96;
 
+                        //formula for price per ratti
+                        priceratti = quantityOfMashaGold / 96;
                         double totalRattiPrice =
                             priceratti * quantityOfRattiGold;
+
+                        //formula for price per point
                         pricePoint = quantityOfPointGold / 100;
                         double totalPointPrice =
                             pricePoint * quantityOfPointGold;
