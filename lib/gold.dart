@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Gold extends StatefulWidget {
-  const Gold({super.key});
+class Goldclass extends StatefulWidget {
+  const Goldclass({super.key});
 
   @override
-  State<Gold> createState() => _GoldState();
+  State<Goldclass> createState() => _GoldclassState();
 }
 
-class _GoldState extends State<Gold> {
+class _GoldclassState extends State<Goldclass> {
   int priceOfTola = 0;
   int quantityOfTolaGold = 0;
   int quantityOfMashaGold = 0;
