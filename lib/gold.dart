@@ -16,7 +16,7 @@ class _GoldclassState extends State<Goldclass> {
   double priceMasha = 0;
   double priceratti = 0;
   double pricePoint = 0;
-  int totalPtice = 0;
+  double totalPrice = 0;
 
   // double total_masha_price = 0;
   // double total_ratti_price = 0;
@@ -73,7 +73,7 @@ class _GoldclassState extends State<Goldclass> {
                     priceMasha = 0;
                     priceratti = 0;
                     pricePoint = 0;
-                    totalPtice = 0;
+                    totalPrice = 0;
 
                     setState(() {});
                   },
@@ -210,106 +210,105 @@ class _GoldclassState extends State<Goldclass> {
           SizedBox(
             height: 10,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              //   FloatingActionButton(
-              //       backgroundColor: Colors.amber,
-              //       onPressed: () {
-              //         if (priceOfTolaController.text == "") {
-              //           print('Price must be entered');
-              //         } else {
-              //           if (quantityOfTolagoldController.text == "") {
-              //             quantityOfTolagoldController.text = "0";
-              //           }
-              //           if (quantityOfMashaGoldController.text == "") {
-              //             quantityOfMashaGoldController.text = "0";
-              //           }
-              //           if (quantityOfRattiGoldController.text == "") {
-              //             quantityOfRattiGoldController.text = "0";
-              //           }
-              //           if (quantityOfPointGoldController.text == "") {
-              //             quantityOfPointGoldController.text = "0";
-              //           }
+          //
 
-              //           priceOfTola = int.parse(priceOfTolaController.text);
-              //           quantityOfTolaGold =
-              //               int.parse(quantityOfTolagoldController.text);
-              //           quantityOfMashaGold =
-              //               int.parse(quantityOfMashaGoldController.text);
+          //   FloatingActionButton(
+          //       backgroundColor: Colors.amber,
+          //       onPressed: () {
+          //         if (priceOfTolaController.text == "") {
+          //           print('Price must be entered');
+          //         } else {
+          //           if (quantityOfTolagoldController.text == "") {
+          //             quantityOfTolagoldController.text = "0";
+          //           }
+          //           if (quantityOfMashaGoldController.text == "") {
+          //             quantityOfMashaGoldController.text = "0";
+          //           }
+          //           if (quantityOfRattiGoldController.text == "") {
+          //             quantityOfRattiGoldController.text = "0";
+          //           }
+          //           if (quantityOfPointGoldController.text == "") {
+          //             quantityOfPointGoldController.text = "0";
+          //           }
 
-              //           quantityOfRattiGold =
-              //               int.parse(quantityOfRattiGoldController.text);
-              //           quantityOfPointGold =
-              //               int.parse(quantityOfPointGoldController.text);
+          //           priceOfTola = int.parse(priceOfTolaController.text);
+          //           quantityOfTolaGold =
+          //               int.parse(quantityOfTolagoldController.text);
+          //           quantityOfMashaGold =
+          //               int.parse(quantityOfMashaGoldController.text);
 
-              //           // if (priceOfTola == "" &&
-              //           //     quantityOfTolaGold == "" &&
-              //           //     quantityOfMashaGold == "" &&
-              //           //     quantityOfRattiGold == "" &&
-              //           //     quantityOfPointGold == "") {
+          //           quantityOfRattiGold =
+          //               int.parse(quantityOfRattiGoldController.text);
+          //           quantityOfPointGold =
+          //               int.parse(quantityOfPointGoldController.text);
 
-              //           //formula for price per masha
-              //           priceMasha = quantityOfTolaGold / 12;
-              //           double totalMashaPrice =
-              //               priceMasha * quantityOfMashaGold;
+          //           // if (priceOfTola == "" &&
+          //           //     quantityOfTolaGold == "" &&
+          //           //     quantityOfMashaGold == "" &&
+          //           //     quantityOfRattiGold == "" &&
+          //           //     quantityOfPointGold == "") {
 
-              //           //formula for price per ratti
-              //           priceratti = quantityOfMashaGold / 96;
-              //           double totalRattiPrice =
-              //               priceratti * quantityOfRattiGold;
+          //           //formula for price per masha
+          //           priceMasha = quantityOfTolaGold / 12;
+          //           double totalMashaPrice =
+          //               priceMasha * quantityOfMashaGold;
 
-              //           //formula for price per point
-              //           pricePoint = quantityOfPointGold / 100;
-              //           double totalPointPrice =
-              //               pricePoint * quantityOfPointGold;
+          //           //formula for price per ratti
+          //           priceratti = quantityOfMashaGold / 96;
+          //           double totalRattiPrice =
+          //               priceratti * quantityOfRattiGold;
 
-              //           totalPtice = (priceOfTola * quantityOfTolaGold) +
-              //               quantityOfMashaGold +
-              //               quantityOfRattiGold +
-              //               quantityOfPointGold;
-              //           print('Total Price=$totalPtice');
-              //           setState(() {});
-              //         }
+          //           //formula for price per point
+          //           pricePoint = quantityOfPointGold / 100;
+          //           double totalPointPrice =
+          //               pricePoint * quantityOfPointGold;
 
-              //         //}
-              //       },
-              //       child: Icon(Icons.calculate)
-              //       //     Text(
-              //       //   'Calculate',
-              //       // )
-              //       ),
-              // SizedBox(width: 20),
-              // Container(
-              //   decoration: BoxDecoration(
-              //       borderRadius: BorderRadius.circular(10),
-              //       color: Colors.amber),
-              //   child: TextButton(
-              //       onPressed: () {},
-              //       child: Text(
-              //         'Calculate',
-              //         style: TextStyle(color: Colors.black),
-              //       )),
-              // ),
-              // SizedBox(
-              //   width: 10,
-              // ),
-              // FloatingActionButton(
-              //     backgroundColor: Colors.amber,
-              //     onPressed: () {
-              //       int priceOfTola = 0;
-              //       int quantityOfTolaGold = 0;
-              //       int quantityOfMashaGold = 0;
-              //       int quantityOfRattiGold = 0;
-              //       int quantityOfPointGold = 0;
-              //       int totalPtice = 0;
+          //           totalPtice = (priceOfTola * quantityOfTolaGold) +
+          //               quantityOfMashaGold +
+          //               quantityOfRattiGold +
+          //               quantityOfPointGold;
+          //           print('Total Price=$totalPtice');
+          //           setState(() {});
+          //         }
 
-              //       setState(() {});
-              //     },
-              //     child: Icon(Icons.refresh) //Text('Clear'),
-              //     ),
-            ],
-          ),
+          //         //}
+          //       },
+          //       child: Icon(Icons.calculate)
+          //       //     Text(
+          //       //   'Calculate',
+          //       // )
+          //       ),
+          // SizedBox(width: 20),
+          // Container(
+          //   decoration: BoxDecoration(
+          //       borderRadius: BorderRadius.circular(10),
+          //       color: Colors.amber),
+          //   child: TextButton(
+          //       onPressed: () {},
+          //       child: Text(
+          //         'Calculate',
+          //         style: TextStyle(color: Colors.black),
+          //       )),
+          // ),
+          // SizedBox(
+          //   width: 10,
+          // ),
+          // FloatingActionButton(
+          //     backgroundColor: Colors.amber,
+          //     onPressed: () {
+          //       int priceOfTola = 0;
+          //       int quantityOfTolaGold = 0;
+          //       int quantityOfMashaGold = 0;
+          //       int quantityOfRattiGold = 0;
+          //       int quantityOfPointGold = 0;
+          //       int totalPtice = 0;
+
+          //       setState(() {});
+          //     },
+          //     child: Icon(Icons.refresh) //Text('Clear'),
+          //     ),
+          //   ],
+          // ),
           // FloatingActionButton(
           //   onPressed: () {},
           //   child: Text('Clear'),
@@ -326,7 +325,7 @@ class _GoldclassState extends State<Goldclass> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'Total Price Of Rs.$totalPtice',
+                'Total Price Of Rs.$totalPrice',
                 style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.w500,
@@ -445,7 +444,7 @@ class _GoldclassState extends State<Goldclass> {
                           //     quantityOfPointGold == "") {
 
                           //formula for price per masha
-                          priceMasha = quantityOfTolaGold / 12;
+                          priceMasha = priceOfTola / 12;
                           double totalMashaPrice =
                               priceMasha * quantityOfMashaGold;
 
@@ -459,11 +458,11 @@ class _GoldclassState extends State<Goldclass> {
                           double totalPointPrice =
                               pricePoint * quantityOfPointGold;
 
-                          totalPtice = (priceOfTola * quantityOfTolaGold) +
-                              quantityOfMashaGold +
-                              quantityOfRattiGold +
-                              quantityOfPointGold;
-                          print('Total Price=$totalPtice');
+                          totalPrice = (priceOfTola * quantityOfTolaGold) +
+                              totalMashaPrice +
+                              totalRattiPrice +
+                              totalPointPrice;
+                          print('Total Price=$totalPrice');
                           setState(() {});
                         }
 
